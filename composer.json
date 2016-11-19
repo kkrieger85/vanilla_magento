@@ -1,0 +1,29 @@
+{
+  "name": "kkrieger/mygento-org",
+  "description": "Repository for demo installation",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "~3.0",
+    "aydin-hassan/magento-core-composer-installer": "~1.2",
+    "firegento/magento": "1.9.2.4-patch3",
+    "aoepeople/aoe_scheduler": "1.5.0",
+    "avstudnitz/scopehint": "0.6.0",
+    "firegento/logger": "1.5.0",
+    "avstudnitz/missing-translations": "0.1.0",
+    "fbrnc/aoe_managestores": "0.2.1",
+    "firegento/adminmonitoring": "1.2.2",
+    "inchoo/php7": "2.0.0",
+    "riconeitzel/german-localepack-de-de": "^1.9"
+  },
+  "license": "test",
+  "authors": [
+    {
+      "name": "Kevin Krieger",
+      "email": "kk@kkrieger.de"
+    }
+  ],
+  "extra": {
+    "magento-root-dir": "./htdocs/",
+    "magento-deploystrategy": "copy",
+    "magento-force": true
+  }
+}
