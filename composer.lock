@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8234b48353d28ce07b16fe2aa6c31cfd",
-    "content-hash": "7927a3d25e34f83dddc430846705fd8c",
+    "hash": "c6d855f218c45f29e5885b99d67473b9",
+    "content-hash": "db967a90196117584dd1097307d2b25f",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
@@ -51,6 +51,45 @@
                 "issues": "https://github.com/AOEpeople/Aoe_Scheduler/issues"
             },
             "time": "2016-06-15 04:46:40"
+        },
+        {
+            "name": "aoepeople/aoe_templatehints",
+            "version": "v0.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AOEpeople/Aoe_TemplateHints.git",
+                "reference": "59d9d2b6b797cbfff9cbeffbc76a33b54b330262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AOEpeople/Aoe_TemplateHints/zipball/59d9d2b6b797cbfff9cbeffbc76a33b54b330262",
+                "reference": "59d9d2b6b797cbfff9cbeffbc76a33b54b330262",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "replace": {
+                "aoemedia/aoe_templatehints": "*",
+                "fbrnc/aoe_templatehints": "*"
+            },
+            "type": "magento-module",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Fabrizio Branca",
+                    "email": "{firtname}.{lastname}@aoe.com"
+                }
+            ],
+            "description": "Advanced Template Hints for Magento",
+            "homepage": "http://www.fabrizio-branca.de/magento-advanced-template-hints-20.html",
+            "support": {
+                "source": "https://github.com/AOEpeople/Aoe_TemplateHints/tree/v0.4.3",
+                "issues": "https://github.com/AOEpeople/Aoe_TemplateHints/issues"
+            },
+            "time": "2015-05-28 16:06:02"
         },
         {
             "name": "avstudnitz/missing-translations",
@@ -106,23 +145,24 @@
         },
         {
             "name": "aydin-hassan/magento-core-composer-installer",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AydinHassan/magento-core-composer-installer.git",
-                "reference": "0c75cefa55595154a03a9c25f69a7a2fc1319be7"
+                "reference": "ef9de07e2378665e31056109f165d10657389c74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AydinHassan/magento-core-composer-installer/zipball/0c75cefa55595154a03a9c25f69a7a2fc1319be7",
-                "reference": "0c75cefa55595154a03a9c25f69a7a2fc1319be7",
+                "url": "https://api.github.com/repos/AydinHassan/magento-core-composer-installer/zipball/ef9de07e2378665e31056109f165d10657389c74",
+                "reference": "ef9de07e2378665e31056109f165d10657389c74",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "~1.0"
+                "composer-plugin-api": "~1.0",
+                "php": "^5.5 | ^7.0"
             },
             "require-dev": {
-                "composer/composer": "~1.0@dev",
+                "composer/composer": "^1.3@dev",
                 "mikey179/vfsstream": "~1.4",
                 "phpunit/phpunit": "~4.3",
                 "squizlabs/php_codesniffer": "~1.5"
@@ -147,32 +187,30 @@
                 }
             ],
             "description": "A composer plugin for managing Magento Core",
-            "time": "2015-09-07 22:38:45"
+            "time": "2016-12-21 09:57:51"
         },
         {
             "name": "eloquent/composer-config-reader",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/composer-config-reader.git",
-                "reference": "f6e72fc8a241e98e0e54657ba02df1df4f678292"
+                "reference": "873dfd6d2b38c14bf1bfd0deb0f54ac7e11d1a14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/composer-config-reader/zipball/f6e72fc8a241e98e0e54657ba02df1df4f678292",
-                "reference": "f6e72fc8a241e98e0e54657ba02df1df4f678292",
+                "url": "https://api.github.com/repos/eloquent/composer-config-reader/zipball/873dfd6d2b38c14bf1bfd0deb0f54ac7e11d1a14",
+                "reference": "873dfd6d2b38c14bf1bfd0deb0f54ac7e11d1a14",
                 "shasum": ""
             },
             "require": {
                 "eloquent/enumeration": "^5",
-                "icecave/isolator": "^3",
-                "justinrainbow/json-schema": "^2",
+                "justinrainbow/json-schema": "^4",
                 "php": ">=5.3"
             },
             "require-dev": {
                 "eloquent/liberator": "^2",
-                "friendsofphp/php-cs-fixer": "^1",
-                "phake/phake": "^2",
+                "eloquent/phony": "0.14.4",
                 "phpunit/phpunit": "^4"
             },
             "type": "library",
@@ -200,7 +238,7 @@
                 "parser",
                 "reader"
             ],
-            "time": "2016-06-23 07:33:20"
+            "time": "2016-12-20 03:37:03"
         },
         {
             "name": "eloquent/enumeration",
@@ -378,64 +416,6 @@
             "time": "2016-10-17 14:46:16"
         },
         {
-            "name": "icecave/isolator",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/IcecaveStudios/isolator.git",
-                "reference": "8fad9e64c393238b01b359e01bd7f25dcdb818e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/IcecaveStudios/isolator/zipball/8fad9e64c393238b01b359e01bd7f25dcdb818e4",
-                "reference": "8fad9e64c393238b01b359e01bd7f25dcdb818e4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "icecave/archer": "~1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Icecave\\Isolator\\": "src"
-                },
-                "files": [
-                    "src/register-autoloader.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "James Harris",
-                    "email": "james.harris@icecave.com.au",
-                    "homepage": "https://github.com/jmalloc"
-                }
-            ],
-            "description": "Dependency injection for global functions.",
-            "homepage": "https://github.com/IcecaveStudios/isolator",
-            "keywords": [
-                "Double",
-                "fake",
-                "mock",
-                "phpunit",
-                "stub",
-                "test",
-                "unit"
-            ],
-            "time": "2015-03-27 05:04:19"
-        },
-        {
             "name": "inchoo/php7",
             "version": "2.0.0",
             "source": {
@@ -470,16 +450,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "2.0.5",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "6b2a33e6a768f96bdc2ead5600af0822eed17d67"
+                "reference": "d39c56a46b3ebe1f3696479966cd2b9f50aaa24f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/6b2a33e6a768f96bdc2ead5600af0822eed17d67",
-                "reference": "6b2a33e6a768f96bdc2ead5600af0822eed17d67",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d39c56a46b3ebe1f3696479966cd2b9f50aaa24f",
+                "reference": "d39c56a46b3ebe1f3696479966cd2b9f50aaa24f",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +476,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -532,7 +512,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2016-06-02 10:59:52"
+            "time": "2016-12-22 16:43:46"
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
@@ -632,6 +612,632 @@
             "time": "2016-08-29 20:34:08"
         },
         {
+            "name": "mawoscha/german-localepack-fr-fr",
+            "version": "v0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kkrieger85/German_LocalePack_fr_FR.git",
+                "reference": "d6ae9f0341fb5b9eea76fc3931c65d18625be620"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kkrieger85/German_LocalePack_fr_FR/zipball/d6ae9f0341fb5b9eea76fc3931c65d18625be620",
+                "reference": "d6ae9f0341fb5b9eea76fc3931c65d18625be620",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "extra": {
+                "magento-root-dir": "./",
+                "magento-deploystrategy": "copy",
+                "map": [
+                    [
+                        "./app/code/community/German/LocalePackFr",
+                        "./app/code/community/German/LocalePackFr"
+                    ],
+                    [
+                        "./app/etc/modules/German_LocalePackFr.xml",
+                        "./app/etc/modules/German_LocalePackFr.xml"
+                    ],
+                    [
+                        "./app/design/adminhtml/default/default/layout/localepackfr.xml",
+                        "./app/design/adminhtml/default/default/layout/localepackfr.xml"
+                    ],
+                    [
+                        "./app/design/adminhtml/default/default/locale/fr_FR/translate.csv",
+                        "./app/design/adminhtml/default/default/locale/fr_FR/translate.csv"
+                    ],
+                    [
+                        "./app/design/frontend/default/blank/locale/fr_FR/translate.csv",
+                        "./app/design/frontend/default/blank/locale/fr_FR/translate.csv"
+                    ],
+                    [
+                        "./app/design/frontend/default/default/locale/fr_FR/translate.csv",
+                        "./app/design/frontend/default/default/locale/fr_FR/translate.csv"
+                    ],
+                    [
+                        "./app/design/frontend/default/iphone/locale/fr_FR/translate.csv",
+                        "./app/design/frontend/default/iphone/locale/fr_FR/translate.csv"
+                    ],
+                    [
+                        "./app/design/frontend/default/modern/locale/fr_FR/translate.csv",
+                        "./app/design/frontend/default/modern/locale/fr_FR/translate.csv"
+                    ],
+                    [
+                        "./app/design/frontend/rwd/default/locale/fr_FR/translate.csv",
+                        "./app/design/frontend/rwd/default/locale/fr_FR/translate.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Adminhtml.csv",
+                        "./app/locale/fr_FR/Mage_Adminhtml.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_AdminNotification.csv",
+                        "./app/locale/fr_FR/Mage_AdminNotification.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_AmazonPayments.csv",
+                        "./app/locale/fr_FR/Mage_AmazonPayments.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Api.csv",
+                        "./app/locale/fr_FR/Mage_Api.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Api2.csv",
+                        "./app/locale/fr_FR/Mage_Api2.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Authorizenet.csv",
+                        "./app/locale/fr_FR/Mage_Authorizenet.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Backup.csv",
+                        "./app/locale/fr_FR/Mage_Backup.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Bundle.csv",
+                        "./app/locale/fr_FR/Mage_Bundle.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Captcha.csv",
+                        "./app/locale/fr_FR/Mage_Captcha.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Catalog.csv",
+                        "./app/locale/fr_FR/Mage_Catalog.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_CatalogInventory.csv",
+                        "./app/locale/fr_FR/Mage_CatalogInventory.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_CatalogRule.csv",
+                        "./app/locale/fr_FR/Mage_CatalogRule.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_CatalogSearch.csv",
+                        "./app/locale/fr_FR/Mage_CatalogSearch.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Centinel.csv",
+                        "./app/locale/fr_FR/Mage_Centinel.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Checkout.csv",
+                        "./app/locale/fr_FR/Mage_Checkout.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Cms.csv",
+                        "./app/locale/fr_FR/Mage_Cms.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Compiler.csv",
+                        "./app/locale/fr_FR/Mage_Compiler.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_ConfigurableSwatches.csv",
+                        "./app/locale/fr_FR/Mage_ConfigurableSwatches.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Connect.csv",
+                        "./app/locale/fr_FR/Mage_Connect.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Contacts.csv",
+                        "./app/locale/fr_FR/Mage_Contacts.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Core.csv",
+                        "./app/locale/fr_FR/Mage_Core.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Cron.csv",
+                        "./app/locale/fr_FR/Mage_Cron.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_CurrencySymbol.csv",
+                        "./app/locale/fr_FR/Mage_CurrencySymbol.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Customer.csv",
+                        "./app/locale/fr_FR/Mage_Customer.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Dataflow.csv",
+                        "./app/locale/fr_FR/Mage_Dataflow.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Directory.csv",
+                        "./app/locale/fr_FR/Mage_Directory.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Downloadable.csv",
+                        "./app/locale/fr_FR/Mage_Downloadable.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Eav.csv",
+                        "./app/locale/fr_FR/Mage_Eav.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_GiftMessage.csv",
+                        "./app/locale/fr_FR/Mage_GiftMessage.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_GoogleAnalytics.csv",
+                        "./app/locale/fr_FR/Mage_GoogleAnalytics.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_GoogleBase.csv",
+                        "./app/locale/fr_FR/Mage_GoogleBase.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_GoogleCheckout.csv",
+                        "./app/locale/fr_FR/Mage_GoogleCheckout.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_ImportExport.csv",
+                        "./app/locale/fr_FR/Mage_ImportExport.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Index.csv",
+                        "./app/locale/fr_FR/Mage_Index.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Install.csv",
+                        "./app/locale/fr_FR/Mage_Install.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Log.csv",
+                        "./app/locale/fr_FR/Mage_Log.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Media.csv",
+                        "./app/locale/fr_FR/Mage_Media.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Newsletter.csv",
+                        "./app/locale/fr_FR/Mage_Newsletter.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Oauth.csv",
+                        "./app/locale/fr_FR/Mage_Oauth.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Page.csv",
+                        "./app/locale/fr_FR/Mage_Page.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_PageCache.csv",
+                        "./app/locale/fr_FR/Mage_PageCache.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Paygate.csv",
+                        "./app/locale/fr_FR/Mage_Paygate.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Payment.csv",
+                        "./app/locale/fr_FR/Mage_Payment.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Paypal.csv",
+                        "./app/locale/fr_FR/Mage_Paypal.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_PaypalUk.csv",
+                        "./app/locale/fr_FR/Mage_PaypalUk.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Persistent.csv",
+                        "./app/locale/fr_FR/Mage_Persistent.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Poll.csv",
+                        "./app/locale/fr_FR/Mage_Poll.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_ProductAlert.csv",
+                        "./app/locale/fr_FR/Mage_ProductAlert.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Rating.csv",
+                        "./app/locale/fr_FR/Mage_Rating.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Reports.csv",
+                        "./app/locale/fr_FR/Mage_Reports.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Review.csv",
+                        "./app/locale/fr_FR/Mage_Review.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Rss.csv",
+                        "./app/locale/fr_FR/Mage_Rss.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Rule.csv",
+                        "./app/locale/fr_FR/Mage_Rule.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Sales.csv",
+                        "./app/locale/fr_FR/Mage_Sales.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_SalesRule.csv",
+                        "./app/locale/fr_FR/Mage_SalesRule.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Sendfriend.csv",
+                        "./app/locale/fr_FR/Mage_Sendfriend.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Shipping.csv",
+                        "./app/locale/fr_FR/Mage_Shipping.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Sitemap.csv",
+                        "./app/locale/fr_FR/Mage_Sitemap.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Tag.csv",
+                        "./app/locale/fr_FR/Mage_Tag.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Tax.csv",
+                        "./app/locale/fr_FR/Mage_Tax.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Usa.csv",
+                        "./app/locale/fr_FR/Mage_Usa.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Weee.csv",
+                        "./app/locale/fr_FR/Mage_Weee.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Widget.csv",
+                        "./app/locale/fr_FR/Mage_Widget.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_Wishlist.csv",
+                        "./app/locale/fr_FR/Mage_Wishlist.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Mage_XmlConnect.csv",
+                        "./app/locale/fr_FR/Mage_XmlConnect.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/Phoenix_Moneybookers.csv",
+                        "./app/locale/fr_FR/Phoenix_Moneybookers.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template",
+                        "./app/locale/fr_FR/template"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email",
+                        "./app/locale/fr_FR/template/email"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/account_new_confirmation.html",
+                        "./app/locale/fr_FR/template/email/account_new_confirmation.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/account_new_confirmed.html",
+                        "./app/locale/fr_FR/template/email/account_new_confirmed.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/account_new.html",
+                        "./app/locale/fr_FR/template/email/account_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/account_password_reset_confirmation.html",
+                        "./app/locale/fr_FR/template/email/account_password_reset_confirmation.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/admin_password_new.html",
+                        "./app/locale/fr_FR/template/email/admin_password_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/admin_password_reset_confirmation.html",
+                        "./app/locale/fr_FR/template/email/admin_password_reset_confirmation.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/amazonpayments_asp_notification_error.html",
+                        "./app/locale/fr_FR/template/email/amazonpayments_asp_notification_error.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/contact_form.html",
+                        "./app/locale/fr_FR/template/email/contact_form.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/currency_update_warning.html",
+                        "./app/locale/fr_FR/template/email/currency_update_warning.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/log_clean_warning.html",
+                        "./app/locale/fr_FR/template/email/log_clean_warning.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/moneybookers_activateemail.html",
+                        "./app/locale/fr_FR/template/email/moneybookers_activateemail.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/newsletter_subscr_confirm.html",
+                        "./app/locale/fr_FR/template/email/newsletter_subscr_confirm.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/newsletter_subscr_success.html",
+                        "./app/locale/fr_FR/template/email/newsletter_subscr_success.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/newsletter_unsub_success.html",
+                        "./app/locale/fr_FR/template/email/newsletter_unsub_success.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/password_new.html",
+                        "./app/locale/fr_FR/template/email/password_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/password_or_email_changed.html",
+                        "./app/locale/fr_FR/template/password_or_email_changed.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/payment_failed.html",
+                        "./app/locale/fr_FR/template/email/payment_failed.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/product_alert_cron_error.html",
+                        "./app/locale/fr_FR/template/email/product_alert_cron_error.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/product_price_alert.html",
+                        "./app/locale/fr_FR/template/email/product_price_alert.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/product_share.html",
+                        "./app/locale/fr_FR/template/email/product_share.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/product_stock_alert.html",
+                        "./app/locale/fr_FR/template/email/product_stock_alert.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sitemap_generate_warning.html",
+                        "./app/locale/fr_FR/template/email/sitemap_generate_warning.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/token.html",
+                        "./app/locale/fr_FR/template/email/token.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/wishlist_share.html",
+                        "./app/locale/fr_FR/template/email/wishlist_share.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales",
+                        "./app/locale/fr_FR/template/email/sales"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_new_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_new_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_new.html",
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_update_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_update_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_update.html",
+                        "./app/locale/fr_FR/template/email/sales/creditmemo_update.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/invoice_new_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/invoice_new_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/invoice_new.html",
+                        "./app/locale/fr_FR/template/email/sales/invoice_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/invoice_update_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/invoice_update_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/invoice_update.html",
+                        "./app/locale/fr_FR/template/email/sales/invoice_update.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/order_new_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/order_new_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/order_new.html",
+                        "./app/locale/fr_FR/template/email/sales/order_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/order_update_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/order_update_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/order_update.html",
+                        "./app/locale/fr_FR/template/email/sales/order_update.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/shipment_new_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/shipment_new_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/shipment_new.html",
+                        "./app/locale/fr_FR/template/email/sales/shipment_new.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/shipment_update_guest.html",
+                        "./app/locale/fr_FR/template/email/sales/shipment_update_guest.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/sales/shipment_update.html",
+                        "./app/locale/fr_FR/template/email/sales/shipment_update.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/html",
+                        "./app/locale/fr_FR/template/email/html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/html/footer.html",
+                        "./app/locale/fr_FR/template/email/html/footer.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/html/header.html",
+                        "./app/locale/fr_FR/template/email/html/header.html"
+                    ],
+                    [
+                        "./app/locale/fr_FR/template/email/html/support.html",
+                        "./app/locale/fr_FR/template/email/html/support.html"
+                    ],
+                    [
+                        "./js/german/localepackfr/setup.js",
+                        "./js/german/localepackfr/setup.js"
+                    ],
+                    [
+                        "./js/tiny_mce/langs/fr.js",
+                        "./js/tiny_mce/langs/fr.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/advhr/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/advhr/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/advimage/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/advimage/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/advlink/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/advlink/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/autosave/langs/fr.js",
+                        "./js/tiny_mce/plugins/autosave/langs/fr.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/emotions/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/emotions/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/fullpage/langs/fr_dlg.js",
+                        "./s/tiny_mce/plugins/fullpage/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/media/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/media/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/paste/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/paste/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/searchreplace/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/searchreplace/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/style/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/style/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/table/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/table/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/template/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/template/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/plugins/xhtmlxtras/langs/fr_dlg.js",
+                        "./js/tiny_mce/plugins/xhtmlxtras/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/themes/advanced/langs/fr.js",
+                        "./js/tiny_mce/themes/advanced/langs/fr.js"
+                    ],
+                    [
+                        "./js/tiny_mce/themes/advanced/langs/fr_dlg.js",
+                        "./js/tiny_mce/themes/advanced/langs/fr_dlg.js"
+                    ],
+                    [
+                        "./js/tiny_mce/themes/simple/langs/fr.js",
+                        "./js/tiny_mce/themes/simple/langs/fr.js"
+                    ],
+                    [
+                        "./downloader/template_fr_1.5",
+                        "./downloader/template_fr_1.5"
+                    ],
+                    [
+                        "./downloader/template_fr_1.7",
+                        "./downloader/template_fr_1.7"
+                    ],
+                    [
+                        "./app/locale/de_DE/German_LocaleFr.csv",
+                        "./app/locale/de_DE/German_LocaleFr.csv"
+                    ],
+                    [
+                        "./app/locale/en_US/German_LocaleFr.csv",
+                        "./app/locale/en_US/German_LocaleFr.csv"
+                    ],
+                    [
+                        "./app/locale/es_ES/German_LocaleFr.csv",
+                        "./app/locale/es_ES/German_LocaleFr.csv"
+                    ],
+                    [
+                        "./app/locale/fr_FR/German_LocaleFr.csv",
+                        "./app/locale/fr_FR/German_LocaleFr.csv"
+                    ],
+                    [
+                        "./app/locale/pt_PT/German_LocaleFr.csv",
+                        "./app/locale/pt_PT/German_LocaleFr.csv"
+                    ]
+                ]
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "MaWoScha"
+                }
+            ],
+            "description": "French (France) Community Translation",
+            "support": {
+                "source": "https://github.com/kkrieger85/German_LocalePack_fr_FR/tree/v0.7.1"
+            },
+            "time": "2016-11-13 10:45:43"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -712,17 +1318,78 @@
             "time": "2015-02-07 10:27:11"
         },
         {
-            "name": "symfony/console",
-            "version": "v3.1.6",
+            "name": "sentry/sentry",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "c99da1119ae61e15de0e4829196b9fba6f73d065"
+                "url": "https://github.com/getsentry/sentry-php.git",
+                "reference": "7656110b7577c4239b5c76a5c2d67261b0122ca0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c99da1119ae61e15de0e4829196b9fba6f73d065",
-                "reference": "c99da1119ae61e15de0e4829196b9fba6f73d065",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/7656110b7577c4239b5c76a5c2d67261b0122ca0",
+                "reference": "7656110b7577c4239b5c76a5c2d67261b0122ca0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.4"
+            },
+            "conflict": {
+                "raven/raven": "*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.8.0",
+                "monolog/monolog": "*",
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "suggest": {
+                "monolog/monolog": "Automatically capture Monolog events as breadcrumbs"
+            },
+            "bin": [
+                "bin/sentry"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Raven_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Cramer",
+                    "email": "dcramer@gmail.com"
+                }
+            ],
+            "description": "A PHP client for Sentry (http://getsentry.com)",
+            "homepage": "http://getsentry.com",
+            "keywords": [
+                "log",
+                "logging"
+            ],
+            "time": "2016-12-14 21:57:27"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "4f9e449e76996adf310498a8ca955c6deebe29dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/4f9e449e76996adf310498a8ca955c6deebe29dd",
+                "reference": "4f9e449e76996adf310498a8ca955c6deebe29dd",
                 "shasum": ""
             },
             "require": {
@@ -733,17 +1400,19 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/filesystem": "~2.8|~3.0",
                 "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
+                "symfony/filesystem": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -770,20 +1439,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-06 01:44:51"
+            "time": "2017-01-08 20:47:33"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.1.6",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8"
+                "reference": "810ba5c1c5352a4ddb15d4719e8936751dff0b05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
-                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/810ba5c1c5352a4ddb15d4719e8936751dff0b05",
+                "reference": "810ba5c1c5352a4ddb15d4719e8936751dff0b05",
                 "shasum": ""
             },
             "require": {
@@ -800,7 +1469,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -827,7 +1496,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 11:02:40"
+            "time": "2017-01-02 20:32:22"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -887,12 +1556,85 @@
                 "shim"
             ],
             "time": "2016-11-14 01:06:16"
+        },
+        {
+            "name": "webcomm/magento-boilerplate",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webcomm/magento-boilerplate.git",
+                "reference": "02e09af4520e6dc44bb74928dc79ac20c8fe801e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webcomm/magento-boilerplate/zipball/02e09af4520e6dc44bb74928dc79ac20c8fe801e",
+                "reference": "02e09af4520e6dc44bb74928dc79ac20c8fe801e",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "magento-root-dir": "./",
+                "magento-deploystrategy": "copy",
+                "map": [
+                    [
+                        "app/code/community/Webcomm/BootstrapNavigation",
+                        "app/code/community/Webcomm/BootstrapNavigation"
+                    ],
+                    [
+                        "app/code/community/Webcomm/MagentoBoilerplate",
+                        "app/code/community/Webcomm/MagentoBoilerplate"
+                    ],
+                    [
+                        "app/design/frontend/boilerplate/default",
+                        "app/design/frontend/boilerplate/default"
+                    ],
+                    [
+                        "app/etc/modules/Webcomm_BootstrapNavigation.xml",
+                        "app/etc/modules/Webcomm_BootstrapNavigation.xml"
+                    ],
+                    [
+                        "app/etc/modules/Webcomm_MagentoBoilerplate.xml",
+                        "app/etc/modules/Webcomm_MagentoBoilerplate.xml"
+                    ],
+                    [
+                        "skin/frontend/boilerplate/default",
+                        "skin/frontend/boilerplate/default"
+                    ]
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "bencorlett@me.com"
+                },
+                {
+                    "name": "Webcomm Pty Ltd",
+                    "email": "contact@webcomm.com.au"
+                }
+            ],
+            "description": "HTML5 Twitter Bootstrap 3.1 Magento Boilerplate Template",
+            "support": {
+                "source": "https://github.com/webcomm/magento-boilerplate/tree/2.0",
+                "issues": "https://github.com/webcomm/magento-boilerplate/issues"
+            },
+            "time": "2016-02-28 23:55:35"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "webcomm/magento-boilerplate": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
