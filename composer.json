@@ -22,7 +22,8 @@
     "riconeitzel/german-localepack-de-de": "^1.9",
     "aoepeople/aoe_templatehints": "^0.4.3",
     "webcomm/magento-boilerplate": "2.0.x-dev",
-    "mawoscha/german-localepack-fr-fr": "^0.7.1"
+    "mawoscha/german-localepack-fr-fr": "^0.7.1",
+    "sentry/sentry": "^1.6.0"
   },
   "repositories": [
     {
