@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "db967a90196117584dd1097307d2b25f",
+    "content-hash": "49487e18054587a73d904d333aaa2fec",
     "packages": [
         {
             "name": "aoepeople/aoe_scheduler",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AOEpeople/Aoe_Scheduler.git",
-                "reference": "6fb8bf1524145fe5b6775305932e1dd0d7d5f6c5"
+                "reference": "9510692d6155feb3345e32151e5cd6492f162ce5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AOEpeople/Aoe_Scheduler/zipball/6fb8bf1524145fe5b6775305932e1dd0d7d5f6c5",
-                "reference": "6fb8bf1524145fe5b6775305932e1dd0d7d5f6c5",
+                "url": "https://api.github.com/repos/AOEpeople/Aoe_Scheduler/zipball/9510692d6155feb3345e32151e5cd6492f162ce5",
+                "reference": "9510692d6155feb3345e32151e5cd6492f162ce5",
                 "shasum": ""
             },
             "require": {
@@ -28,28 +28,25 @@
                 "fbrnc/aoe_scheduler": "*"
             },
             "type": "magento-module",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0"
             ],
             "authors": [
                 {
-                    "name": "Fabrizio Branca",
-                    "email": "firstname.lastname@aoe.com",
-                    "role": "Author/Maintainer"
-                },
-                {
                     "name": "Lee Saferite",
                     "email": "lee.saferite@aoe.com",
                     "role": "Contributor/Maintainer"
+                },
+                {
+                    "name": "Fabrizio Branca",
+                    "email": "firstname.lastname@aoe.com",
+                    "role": "Author/Maintainer"
                 }
             ],
             "description": "Magento Cron Scheduler",
             "homepage": "https://github.com/AOEpeople/Aoe_Scheduler",
-            "support": {
-                "source": "https://github.com/AOEpeople/Aoe_Scheduler/tree/v1.5.0",
-                "issues": "https://github.com/AOEpeople/Aoe_Scheduler/issues"
-            },
-            "time": "2016-06-15T04:46:40+00:00"
+            "time": "2016-12-14T14:42:05+00:00"
         },
         {
             "name": "aoepeople/aoe_templatehints",
@@ -387,29 +384,26 @@
         },
         {
             "name": "firegento/magento",
-            "version": "v1.9.2.4-patch3",
+            "version": "v1.9.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firegento/magento.git",
-                "reference": "744e69f5d8bc02979ab4616047b13f8b2bfd4a44"
+                "reference": "e375159bfbb7afb205490a57431ac0519ff47e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firegento/magento/zipball/744e69f5d8bc02979ab4616047b13f8b2bfd4a44",
-                "reference": "744e69f5d8bc02979ab4616047b13f8b2bfd4a44",
+                "url": "https://api.github.com/repos/firegento/magento/zipball/e375159bfbb7afb205490a57431ac0519ff47e2e",
+                "reference": "e375159bfbb7afb205490a57431ac0519ff47e2e",
                 "shasum": ""
             },
             "type": "magento-core",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0",
                 "AFL-3.0"
             ],
             "description": "Magento CE",
-            "support": {
-                "source": "https://github.com/firegento/magento/tree/v1.9.2.4-patch3",
-                "issues": "https://github.com/firegento/magento/issues"
-            },
-            "time": "2016-10-17T14:46:16+00:00"
+            "time": "2017-06-07T17:23:28+00:00"
         },
         {
             "name": "inchoo/php7",
